@@ -1,0 +1,13 @@
+.TodoList {
+	list-style: none;
+	padding: 0;
+}
+
+.TodoList li {
+	margin: 10px;
+	width: 200px;
+}
+
+.TodoList button {
+	float: right;
+}
