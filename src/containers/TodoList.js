@@ -3,10 +3,10 @@ import style from './TodoList.css';
 
 const TodoItem = props => {
     let todos = props.todos.map(todo => {
-        return <li>{todo.text} <button onClick={() => props.remove(todo.id)}>x</button></li>
+        return <li>{todo.text} <button className='btn btn-danger' onClick={() => props.remove(todo.id)}>x</button></li>
     });
     return (
-        <ul className={style.TodoList}>{todos}</ul>
+        <ol className={style.TodoList}>{todos}</ol>
     )
 }
 

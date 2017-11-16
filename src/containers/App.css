@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
 body {
+	font-family: 'Lato', sans-serif;
 	margin: 0;
+	text-align: center;
 }
 
 .TodoApp {
-	background-color: #F5F5F5;
+	background-color: lightgreen;
 	color: #222;
 	display: flex;
 	flex-direction: column;
@@ -13,4 +17,17 @@ body {
 	align-content: center;
 	width: 100vw;
 	height: 100vh;
+}
+
+h1 {
+	color: #B7AAF1;
+	font-size: 56px;
+	margin: 30px;
+	text-transform: uppercase;
+}
+
+p {
+	color: #BB875E;
+	font-size: 26px;
+	margin: 0 0 20px;
 }

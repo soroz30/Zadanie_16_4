@@ -3,6 +3,7 @@ import uuid from 'uuid';
 import style from './App.css';
 import Title from './Title.js';
 import TodoList from './TodoList.js';
+import TodoForm from './TodoForm.js';
 
 const startData = [{
                         id: 1,
@@ -24,6 +25,7 @@ class App extends React.Component {
     }
     
     addTodo(val) {
+        console.log(val);
         const todo = {
             text: val,
             id: uuid.v4(),
@@ -42,6 +44,7 @@ class App extends React.Component {
             <div className={style.TodoApp}>
                 <Title title='Todo List' number={this.state.data.length}/>
                 <TodoList todos={this.state.data} remove={this.removeTodo.bind(this)}/>
+                <TodoForm addTodo={this.addTodo.bind(this)}/>
             </div>
         )
     }
